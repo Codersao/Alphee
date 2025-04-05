@@ -1,0 +1,40 @@
+Hi, it's me, Jatin — Codersao!
+
+This is my website: www.Codersao.in
+
+I worked on this project for 16 nights and spent over 150+ hours developing it.
+Now, the code is ready, but I'm not entirely sure why the WebRTC video isn't working properly.
+I’ve checked all my code and believe this might be a localhost server issue rather than a coding error.
+
+When I tested the code on localhost, the video started working automatically, which makes me think the code itself is fine.
+However, I suspect there might be some issues with node_modules, which I plan to fix later.
+
+I also tested the chat box, and it's working perfectly.
+Currently, the website doesn’t have an admin panel — we plan to add it later.
+
+If everything works fine and we fix the remaining issues, the project will be 100% complete.
+
+I provided beta access for testing, but sometimes my server crashes because I’m using localhost as the server.
+Video chat wasn’t enabled during beta testing due to network or server issues—I’m not entirely sure which one.
+I'll fix this issue soon.
+
+Now, let's test it on the local server and see if everything is running smoothly! 🚀
+
+April 4th, Night Update
+I fixed the code!
+I updated the server.js and script files — everything is working now.
+This is my first self-made project, and I’m ready to push it to GitHub!
+I hope you're reading this "challenge file" — it means a lot to me.
+
+Summary:
+When an error shows up, it might take time to fix…
+But it's not impossible if we go step by step and carefully check which part is causing the issue.
+Now I can finally move on to the next project — this one is done!
+
+In the future, if I have time, I’ll fix a few small bugs too — like improving P2P connection speed.
+I haven’t added a loading screen for the video either — right now it directly connects.
+
+
+If you liked this script, feel free to follow me on GitHub and Codeforces! 
+Codeforces: https://codeforces.com/profile/Codersao
+GitHub : https://github.com/Codersao
