@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphee - Video & Text Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Legal Disclaimer Modal -->
+    <div id="legalModal" class="modal">
+        <div class="modal-content">
+            <h2>⚠️ Disclaimer | अस्वीकरण | ਅਸਵੀਕਾਰ</h2>
+
+            <p class="warning">The website and developers are NOT responsible for any user interactions or consequences.
+                Use at your own risk.</p>
+            <p><strong>English:</strong> By using Alphee, you acknowledge that this platform is for entertainment
+                purposes only.</p>
+
+            <p><strong>हिन्दी:</strong> Alphee का उपयोग करके, आप स्वीकार करते हैं कि यह प्लेटफॉर्म केवल मनोरंजन के लिए
+                है।
+                <span class="warning">वेबसाइट और डेवलपर्स आपके कार्यों के लिए जिम्मेदार नहीं हैं।</span> अपने जोखिम पर
+                उपयोग करें।
+            </p>
+
+            <p><strong>ਪੰਜਾਬੀ:</strong> Alphee ਦੀ ਵਰਤੋਂ ਕਰਕੇ, ਤੁਸੀਂ ਮੰਨਦੇ ਹੋ ਕਿ ਇਹ ਪਲੇਟਫਾਰਮ ਸਿਰਫ ਮਨੋਰੰਜਨ ਲਈ ਹੈ।
+                <span class="warning">ਵੈੱਬਸਾਈਟ ਅਤੇ ਵਿਕਾਸਕਾਰ ਤੁਹਾਡੇ ਕੰਮਾਂ ਲਈ ਜ਼ਿੰਮੇਵਾਰ ਨਹੀਂ ਹਨ।</span> ਆਪਣੇ ਖ਼ਤਰੇ 'ਤੇ
+                ਵਰਤੋਂ।
+            </p>
+
+            <button onclick="closeModal()">I Understand & Agree | मैं सहमत हूँ | ਮੈਂ ਸਹਿਮਤ ਹਾਂ</button>
+        </div>
+    </div>
+
+    <!-- Chat Container -->
+    <div class="container hidden" id="chat-container">
+        <header>
+            <h1>✧･ﾟ: *✧･ﾟ:* <strong>Alphee</strong> *:･ﾟ✧*:･ﾟ✧</h1>
+            <p>🎥 Meet strangers with <strong>Video</strong> & 💬 <strong>Chat</strong> — real connections start here!</p>
+        </header>
+
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h2>Start Chatting</h2>
+            <div class="interests">
+                <label>Select interests:</label>
+                <div><input type="checkbox" id="music" value="music"> <label for="music">Music</label></div>
+                <div><input type="checkbox" id="sports" value="sports"> <label for="sports">Sports</label></div>
+                <div><input type="checkbox" id="gaming" value="gaming"> <label for="gaming">Gaming</label></div>
+                <div><input type="checkbox" id="movies" value="movies"> <label for="movies">Movies</label></div>
+            </div>
+            <button id="start-btn">Start Video Chat</button>
+        </div>
+
+        <!-- Waiting Screen -->
+        <div id="waiting-screen" class="hidden">
+            <h2>Finding a partner...</h2>
+            <div class="loader"></div>
+            <button id="cancel-btn">Cancel</button>
+        </div>
+
+        <!-- Chat Screen (Video + Text) -->
+        <div id="chat-screen" class="hidden">
+            <div class="video-container">
+                <div class="video-box">
+                    <video id="local-video" autoplay muted playsinline></video>
+                    <div class="video-label">You</div>
+                </div>
+                <div class="video-box">
+                    <video id="remote-video" autoplay playsinline></video>
+                    <div class="video-label">Stranger</div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="mute-btn">Mute</button>
+                <button id="video-btn">Stop Video</button>
+                <button id="disconnect-btn">Disconnect</button>
+            </div>
+
+            <div class="chat-container">
+                <div id="chat-messages"></div>
+                <div class="message-input">
+                    <input type="text" id="message-input" placeholder="Type a message...">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+        <p>🕊️ Born from the silence, made to be heard.</p>
+        <p>© 2025 𝐂𝐎𝐃𝐄𝐑𝐒𝐀𝐎</p>
+    </div>
+
+    <script>
+        function closeModal() {
+            document.getElementById("legalModal").style.display = "none";
+            document.getElementById("chat-container").classList.remove("hidden");
+        }
+    </script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
