@@ -3,6 +3,8 @@ const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 const path = require('path');
+// © 2025 Jatin Ghoyal – All Rights Reserved
+// Do not use or distribute without permission.
 
 // Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
