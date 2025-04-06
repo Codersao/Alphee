@@ -1,3 +1,7 @@
+// © 2025 Jatin Ghoyal – All Rights Reserved
+// Do not use or distribute without permission.
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const socket = io();
     const startScreen = document.getElementById('start-screen');
