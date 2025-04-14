@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
             localVideo.srcObject = localStream;
-            console.log("✅ Local stream initialized.");
+            localVideo.style.transform = "scaleX(-1)"; // 👈 Mirror ONLY your local preview
+            console.log("✅ Local stream initialized SAO Group .");
         } catch (err) {
             alert("Error accessing camera/microphone: " + err.message);
             console.error("❌ getUserMedia error:", err);
