@@ -283,3 +283,23 @@ button:hover {
     font-size: 1.4rem;
   }
 }
+/* Local Video (User Side) */
+/* LOCAL VIDEO - USER SIDE */
+/* LOCAL VIDEO - USER SIDE */
+#local-video {
+  transform: scaleX(-1); /* This mirrors the user's own video */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #000;
+}
+
+/* REMOTE VIDEO - STRANGER SIDE */
+#remote-video {
+  transform: none; /* Ensure stranger's video is NOT mirrored */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #000;
+}
+
