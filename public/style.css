@@ -126,6 +126,7 @@ button:hover {
 }
 
 /* LOCAL VIDEO - USER SIDE */
+/* LOCAL VIDEO - USER SIDE */
 #local-video {
   transform: scaleX(-1); /* Mirror user's own video */
   width: 100%;
@@ -134,6 +135,13 @@ button:hover {
   background-color: #000;
 }
 
+/* REMOTE VIDEO - OTHER USER SIDE */
+#remote-video {
+  transform: scaleX(-1); /* Mirror the remote video too */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #000;
 }
 /* Video Section */
 .video-container {
