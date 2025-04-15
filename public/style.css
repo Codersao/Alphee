@@ -125,6 +125,23 @@ button:hover {
   font-weight: bold;
 }
 
+/* LOCAL VIDEO - USER SIDE */
+#local-video {
+  transform: scaleX(-1); /* Mirror user's own video */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #000;
+}
+
+/* REMOTE VIDEO - STRANGER SIDE */
+#remote-video {
+  transform: none; /* Stranger's video not mirrored */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #000;
+}
 /* Video Section */
 .video-container {
   display: flex;
