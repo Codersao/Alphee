@@ -1,8 +1,4 @@
-:root {
-  --transition-speed: 0.3s;
-  --transition-ease: ease-in-out;
-  --animation-speed: 1.2s;
-}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
 /* Base Reset */
 * {
@@ -24,7 +20,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  transition: background var(--transition-speed) var(--transition-ease);
 }
 
 /* Container */
@@ -36,7 +31,7 @@ body {
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
-  animation: fadeIn var(--animation-speed) var(--transition-ease);
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 /* Header */
@@ -49,7 +44,6 @@ header h1 {
   text-shadow: 0 0 20px #00f0ff;
   margin-bottom: 10px;
   letter-spacing: 2px;
-  transition: all var(--transition-speed) var(--transition-ease);
 }
 
 header p {
@@ -57,7 +51,6 @@ header p {
   font-size: 1.2em;
   color: #d0f0ff;
   margin-bottom: 30px;
-  transition: color var(--transition-speed) var(--transition-ease);
 }
 
 /* Interests */
@@ -66,7 +59,6 @@ header p {
   margin-bottom: 10px;
   font-weight: bold;
   color: #aeefff;
-  transition: color var(--transition-speed);
 }
 
 .interests div {
@@ -85,7 +77,7 @@ button {
   color: black;
   font-weight: bold;
   cursor: pointer;
-  transition: all var(--transition-speed) var(--transition-ease);
+  transition: 0.3s ease;
   box-shadow: 0 0 15px #00f0ff;
 }
 
@@ -107,7 +99,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  transition: all var(--transition-speed);
 }
 
 .modal-content {
@@ -118,10 +109,10 @@ button:hover {
   max-width: 700px;
   margin: 20px;
   color: #e0f7ff;
+  font-family: 'Orbitron', sans-serif;
   box-shadow: 0 0 30px #00f0ff33;
   line-height: 1.6;
   font-size: 1rem;
-  transition: all var(--transition-speed);
 }
 
 .modal-content h2 {
@@ -149,7 +140,6 @@ button:hover {
   overflow: hidden;
   position: relative;
   box-shadow: 0 0 15px #00f0ff44;
-  transition: box-shadow var(--transition-speed);
 }
 
 .video-label {
@@ -163,26 +153,12 @@ button:hover {
   color: #ffffff;
 }
 
-#local-video,
-#remote-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: #000;
-  transition: transform var(--transition-speed);
-}
-
-#local-video {
-  transform: scaleX(-1);
-}
-
 /* Chat UI */
 .chat-container {
   margin-top: 20px;
   background: rgba(255, 255, 255, 0.05);
   padding: 15px;
   border-radius: 15px;
-  transition: background var(--transition-speed);
 }
 
 #chat-messages {
@@ -208,7 +184,6 @@ button:hover {
   background-color: #ffffff11;
   color: #fff;
   font-size: 1em;
-  transition: background-color var(--transition-speed);
 }
 
 /* Footer */
@@ -235,7 +210,7 @@ button:hover {
   }
 }
 
-/* 📱 Mobile Responsive */
+/* 📱 MOBILE MODE STYLING */
 @media screen and (max-width: 768px) {
   body {
     padding: 10px;
