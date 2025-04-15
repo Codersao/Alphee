@@ -1,7 +1,3 @@
-// © 2025 Jatin Ghoyal – All Rights Reserved
-// Do not use or distribute without permission.
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const socket = io();
     const startScreen = document.getElementById('start-screen');
@@ -37,8 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
             localVideo.srcObject = localStream;
-            localVideo.style.transform = "scaleX(-1)"; // 👈 Mirror ONLY your local preview
-            console.log("✅ Local stream initialized SAO Group .");
+            console.log("✅ Local stream initialized.");
         } catch (err) {
             alert("Error accessing camera/microphone: " + err.message);
             console.error("❌ getUserMedia error:", err);
