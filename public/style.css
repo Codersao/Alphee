@@ -136,6 +136,13 @@ button:hover {
 }
 
 /* REMOTE VIDEO - OTHER USER SIDE */
+#remote-video {
+  transform: scaleX(1); /* Mirror the remote video too */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #000;
+}
 
 /* Video Section */
 .video-container {
